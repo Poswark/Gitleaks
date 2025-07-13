@@ -130,3 +130,5 @@ Si lo queremos ver en HTML
 
 ➜  Gitleaks git:(trunk) ✗ python3 generar_reporte_gitleaks.py 
 ✅ Reporte generado: gitleaks-report.html
+
+![alt text](Reporte-html.png)

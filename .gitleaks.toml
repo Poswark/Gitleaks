@@ -1,6 +1,10 @@
 title = "Custom Gitleaks Config for Secrets Detection"
 version = "2"
 
+[[path.allowlist]]
+description = "Solo analizar el directorio app"
+path = "app/"
+
 [[rules]]
 id = "env-generic-keys"
 description = "Detect generic env-style secrets"

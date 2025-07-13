@@ -36,7 +36,7 @@ pipeline {
         stage('Generar reporte HTML') {
             steps {
                 echo "📝 Generando reporte HTML..."
-                sh 'python3 generar_html_gitleaks.py'
+                sh 'python3 generar_reporte_gitleaks.py'
             }
         }
 
