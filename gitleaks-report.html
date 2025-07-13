@@ -16,7 +16,7 @@
     </head>
     <body>
         <h1>🔐 Reporte de Secretos Detectados - Gitleaks</h1>
-    <div class="danger">⚠️ Se detectaron <strong>4</strong> posibles secretos:</div>
+    <div class="danger">⚠️ Se detectaron <strong>9</strong> posibles secretos:</div>
         <table>
             <tr>
                 <th>Archivo</th>
@@ -31,52 +31,112 @@
             </tr>
         
             <tr>
-                <td>app/main.py</td>
-                <td>36</td>
+                <td>Jenkinsfile</td>
+                <td>53</td>
+                <td>Secret</td>
+                <td><code>Secret Report</code></td>
+                <td>env-generic-keys</td>
+                <td>Giovanny Orjuela (giovannyorjuel2@gmail.com)</td>
+                <td>5dd80cd39809676cf8f4dad6f020c269d4fc33f4</td>
+                <td>Init commit</td>
+                <td><a href="https://github.com/Poswark/Gitleaks/blob/5dd80cd39809676cf8f4dad6f020c269d4fc33f4/Jenkinsfile#L53" target="_blank">🔗 Ver Commit</a></td>
+            </tr>
+            
+            <tr>
+                <td>app/.env</td>
+                <td>1</td>
+                <td>API_KEY</td>
+                <td><code>API_KEY=abc123</code></td>
+                <td>env-generic-keys</td>
+                <td>Giovanny Orjuela (giovannyorjuel2@gmail.com)</td>
+                <td>5dd80cd39809676cf8f4dad6f020c269d4fc33f4</td>
+                <td>Init commit</td>
+                <td><a href="https://github.com/Poswark/Gitleaks/blob/5dd80cd39809676cf8f4dad6f020c269d4fc33f4/app/.env#L1" target="_blank">🔗 Ver Commit</a></td>
+            </tr>
+            
+            <tr>
+                <td>app/.env</td>
+                <td>2</td>
+                <td>PASSWORD</td>
+                <td><code>PASSWORD=supersecret</code></td>
+                <td>env-generic-keys</td>
+                <td>Giovanny Orjuela (giovannyorjuel2@gmail.com)</td>
+                <td>5dd80cd39809676cf8f4dad6f020c269d4fc33f4</td>
+                <td>Init commit</td>
+                <td><a href="https://github.com/Poswark/Gitleaks/blob/5dd80cd39809676cf8f4dad6f020c269d4fc33f4/app/.env#L2" target="_blank">🔗 Ver Commit</a></td>
+            </tr>
+            
+            <tr>
+                <td>gitleaks-report.html</td>
+                <td>37</td>
                 <td>api_key</td>
                 <td><code>api_key:
         logging</code></td>
                 <td>env-generic-keys</td>
-                <td>poswark (giovannyorjuel2@gmail.com)</td>
-                <td>3543eae0fffa481c4bd0a19e7ded735b44dfab6b</td>
-                <td>migrate to fast api</td>
-                <td><a href="https://github.com/Poswark/link-connection-api/blob/3543eae0fffa481c4bd0a19e7ded735b44dfab6b/app/main.py#L36-L37" target="_blank">🔗 Ver Commit</a></td>
+                <td>Giovanny Orjuela (giovannyorjuel2@gmail.com)</td>
+                <td>5dd80cd39809676cf8f4dad6f020c269d4fc33f4</td>
+                <td>Init commit</td>
+                <td><a href="https://github.com/Poswark/Gitleaks/blob/5dd80cd39809676cf8f4dad6f020c269d4fc33f4/gitleaks-report.html#L37-L38" target="_blank">🔗 Ver Commit</a></td>
             </tr>
             
             <tr>
-                <td>app.py</td>
-                <td>21</td>
+                <td>gitleaks-report.html</td>
+                <td>50</td>
                 <td>api_key</td>
                 <td><code>api_key = request</code></td>
                 <td>env-generic-keys</td>
-                <td>poswark (giovannyorjuel2@gmail.com)</td>
-                <td>b164bab7aaab9df409d43e85b06fe1d2c1733173</td>
-                <td>link api</td>
-                <td><a href="https://github.com/Poswark/link-connection-api/blob/b164bab7aaab9df409d43e85b06fe1d2c1733173/app.py#L21" target="_blank">🔗 Ver Commit</a></td>
+                <td>Giovanny Orjuela (giovannyorjuel2@gmail.com)</td>
+                <td>5dd80cd39809676cf8f4dad6f020c269d4fc33f4</td>
+                <td>Init commit</td>
+                <td><a href="https://github.com/Poswark/Gitleaks/blob/5dd80cd39809676cf8f4dad6f020c269d4fc33f4/gitleaks-report.html#L50" target="_blank">🔗 Ver Commit</a></td>
             </tr>
             
             <tr>
-                <td>app.py</td>
-                <td>22</td>
+                <td>gitleaks-report.html</td>
+                <td>62</td>
                 <td>API_KEY</td>
                 <td><code>API_KEY:
         return</code></td>
                 <td>env-generic-keys</td>
-                <td>poswark (giovannyorjuel2@gmail.com)</td>
-                <td>b164bab7aaab9df409d43e85b06fe1d2c1733173</td>
-                <td>link api</td>
-                <td><a href="https://github.com/Poswark/link-connection-api/blob/b164bab7aaab9df409d43e85b06fe1d2c1733173/app.py#L22-L23" target="_blank">🔗 Ver Commit</a></td>
+                <td>Giovanny Orjuela (giovannyorjuel2@gmail.com)</td>
+                <td>5dd80cd39809676cf8f4dad6f020c269d4fc33f4</td>
+                <td>Init commit</td>
+                <td><a href="https://github.com/Poswark/Gitleaks/blob/5dd80cd39809676cf8f4dad6f020c269d4fc33f4/gitleaks-report.html#L62-L63" target="_blank">🔗 Ver Commit</a></td>
             </tr>
             
             <tr>
-                <td>Jenkinsfile</td>
-                <td>10</td>
+                <td>gitleaks-report.html</td>
+                <td>75</td>
                 <td>API_KEY</td>
                 <td><code>API_KEY = credentials</code></td>
                 <td>env-generic-keys</td>
-                <td>poswark (giovannyorjuel2@gmail.com)</td>
-                <td>b164bab7aaab9df409d43e85b06fe1d2c1733173</td>
-                <td>link api</td>
-                <td><a href="https://github.com/Poswark/link-connection-api/blob/b164bab7aaab9df409d43e85b06fe1d2c1733173/Jenkinsfile#L10" target="_blank">🔗 Ver Commit</a></td>
+                <td>Giovanny Orjuela (giovannyorjuel2@gmail.com)</td>
+                <td>5dd80cd39809676cf8f4dad6f020c269d4fc33f4</td>
+                <td>Init commit</td>
+                <td><a href="https://github.com/Poswark/Gitleaks/blob/5dd80cd39809676cf8f4dad6f020c269d4fc33f4/gitleaks-report.html#L75" target="_blank">🔗 Ver Commit</a></td>
+            </tr>
+            
+            <tr>
+                <td>Readme.md</td>
+                <td>35</td>
+                <td>password</td>
+                <td><code>password=123456</code></td>
+                <td>env-generic-keys</td>
+                <td>Giovanny Orjuela (giovannyorjuel2@gmail.com)</td>
+                <td>5dd80cd39809676cf8f4dad6f020c269d4fc33f4</td>
+                <td>Init commit</td>
+                <td><a href="https://github.com/Poswark/Gitleaks/blob/5dd80cd39809676cf8f4dad6f020c269d4fc33f4/Readme.md?plain=1#L35" target="_blank">🔗 Ver Commit</a></td>
+            </tr>
+            
+            <tr>
+                <td>Readme.md</td>
+                <td>36</td>
+                <td>API_KEY</td>
+                <td><code>API_KEY=abcd1234</code></td>
+                <td>env-generic-keys</td>
+                <td>Giovanny Orjuela (giovannyorjuel2@gmail.com)</td>
+                <td>5dd80cd39809676cf8f4dad6f020c269d4fc33f4</td>
+                <td>Init commit</td>
+                <td><a href="https://github.com/Poswark/Gitleaks/blob/5dd80cd39809676cf8f4dad6f020c269d4fc33f4/Readme.md?plain=1#L36" target="_blank">🔗 Ver Commit</a></td>
             </tr>
             </table></body></html>

@@ -74,3 +74,59 @@ tags = ["key", "custom", "env"]
 ```
 
 ## DEMO
+``` sh
+➜  Gitleaks git:(trunk) ✗ docker run --rm -v $(pwd):/repo zricethezav/gitleaks:latest detect \
+  --source=/repo/app \
+  --report-format=json \
+  --report-path=/repo/gitleaks-report.json \
+  --config=/repo/.gitleaks.toml
+
+    ○
+    │╲
+    │ ○
+    ○ ░
+    ░    gitleaks
+
+9:40PM INF 1 commits scanned.
+9:40PM INF scanned ~13046 bytes (13.05 KB) in 76.5ms
+9:40PM WRN leaks found: 9
+```
+
+Se Crea un archivo en json con todos los datos del secreto detectado.
+
+``` json
+
+
+[
+ {
+  "RuleID": "env-generic-keys",
+  "Description": "Detect generic env-style secrets",
+  "StartLine": 53,
+  "EndLine": 53,
+  "StartColumn": 44,
+  "EndColumn": 56,
+  "Match": "Secret Report",
+  "Secret": "Secret",
+  "File": "Jenkinsfile",
+  "SymlinkFile": "",
+  "Commit": "5dd80cd39809676cf8f4dad6f020c269d4fc33f4",
+  "Link": "https://github.com/Poswark/Gitleaks/blob/5dd80cd39809676cf8f4dad6f020c269d4fc33f4/Jenkinsfile#L53",
+  "Entropy": 2.251629,
+  "Author": "Giovanny Orjuela",
+  "Email": "giovannyorjuel2@gmail.com",
+  "Date": "2025-07-13T21:30:34Z",
+  "Message": "Init commit",
+  "Tags": [
+   "key",
+   "env",
+   "custom"
+  ],
+  "Fingerprint": "5dd80cd39809676cf8f4dad6f020c269d4fc33f4:Jenkinsfile:env-generic-keys:53"
+ }
+
+```
+
+Si lo queremos ver en HTML
+
+➜  Gitleaks git:(trunk) ✗ python3 generar_reporte_gitleaks.py 
+✅ Reporte generado: gitleaks-report.html

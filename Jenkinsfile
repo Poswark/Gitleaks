@@ -24,7 +24,6 @@ pipeline {
                     -v "\$PWD":/repo \
                     \$GITLEAKS_IMAGE \
                     detect \
-                    --no-git \
                     --source=/repo/\$PROJECT_DIR \
                     --report-format=json \
                     --report-path=/repo/\$REPORT_JSON \
