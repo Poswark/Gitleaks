@@ -1,0 +1,82 @@
+
+    <html>
+    <head>
+        <title>Reporte de Gitleaks</title>
+        <style>
+            body { font-family: Arial, sans-serif; padding: 20px; background: #f9f9f9; }
+            h1 { color: #d9534f; }
+            table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+            th, td { padding: 10px; border: 1px solid #ccc; text-align: left; vertical-align: top; }
+            th { background-color: #eaeaea; }
+            tr:nth-child(even) { background-color: #f2f2f2; }
+            .ok { background-color: #dff0d8; color: #3c763d; padding: 15px; border-radius: 5px; }
+            .danger { background-color: #f2dede; color: #a94442; padding: 15px; border-radius: 5px; }
+            code { background-color: #eee; padding: 2px 4px; border-radius: 3px; }
+        </style>
+    </head>
+    <body>
+        <h1>🔐 Reporte de Secretos Detectados - Gitleaks</h1>
+    <div class="danger">⚠️ Se detectaron <strong>4</strong> posibles secretos:</div>
+        <table>
+            <tr>
+                <th>Archivo</th>
+                <th>Línea</th>
+                <th>Clave</th>
+                <th>Match</th>
+                <th>Regla</th>
+                <th>Autor</th>
+                <th>Commit ID</th>
+                <th>Mensaje</th>
+                <th>Link</th>
+            </tr>
+        
+            <tr>
+                <td>app/main.py</td>
+                <td>36</td>
+                <td>api_key</td>
+                <td><code>api_key:
+        logging</code></td>
+                <td>env-generic-keys</td>
+                <td>poswark (giovannyorjuel2@gmail.com)</td>
+                <td>3543eae0fffa481c4bd0a19e7ded735b44dfab6b</td>
+                <td>migrate to fast api</td>
+                <td><a href="https://github.com/Poswark/link-connection-api/blob/3543eae0fffa481c4bd0a19e7ded735b44dfab6b/app/main.py#L36-L37" target="_blank">🔗 Ver Commit</a></td>
+            </tr>
+            
+            <tr>
+                <td>app.py</td>
+                <td>21</td>
+                <td>api_key</td>
+                <td><code>api_key = request</code></td>
+                <td>env-generic-keys</td>
+                <td>poswark (giovannyorjuel2@gmail.com)</td>
+                <td>b164bab7aaab9df409d43e85b06fe1d2c1733173</td>
+                <td>link api</td>
+                <td><a href="https://github.com/Poswark/link-connection-api/blob/b164bab7aaab9df409d43e85b06fe1d2c1733173/app.py#L21" target="_blank">🔗 Ver Commit</a></td>
+            </tr>
+            
+            <tr>
+                <td>app.py</td>
+                <td>22</td>
+                <td>API_KEY</td>
+                <td><code>API_KEY:
+        return</code></td>
+                <td>env-generic-keys</td>
+                <td>poswark (giovannyorjuel2@gmail.com)</td>
+                <td>b164bab7aaab9df409d43e85b06fe1d2c1733173</td>
+                <td>link api</td>
+                <td><a href="https://github.com/Poswark/link-connection-api/blob/b164bab7aaab9df409d43e85b06fe1d2c1733173/app.py#L22-L23" target="_blank">🔗 Ver Commit</a></td>
+            </tr>
+            
+            <tr>
+                <td>Jenkinsfile</td>
+                <td>10</td>
+                <td>API_KEY</td>
+                <td><code>API_KEY = credentials</code></td>
+                <td>env-generic-keys</td>
+                <td>poswark (giovannyorjuel2@gmail.com)</td>
+                <td>b164bab7aaab9df409d43e85b06fe1d2c1733173</td>
+                <td>link api</td>
+                <td><a href="https://github.com/Poswark/link-connection-api/blob/b164bab7aaab9df409d43e85b06fe1d2c1733173/Jenkinsfile#L10" target="_blank">🔗 Ver Commit</a></td>
+            </tr>
+            </table></body></html>
