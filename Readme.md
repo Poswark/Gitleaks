@@ -1,6 +1,15 @@
 # 🔐 Gitleaks: Detecta secretos antes de que sea demasiado tarde
 
 
+  <p> 
+    <i>Cloud Engineer | Kubernetes Developer | Open Source Contributor</i>
+  </p>
+  <a href="https://www.linkedin.com/in/giovannyorjuel2/"> <img src="https://img.shields.io/badge/LinkedIn-Connect-blue?logo=linkedin&style=flat" alt="LinkedIn"/> </a>
+  <a href="https://medium.com/@giovannyorjuel2"> <img src="https://img.shields.io/badge/Medium-Blog-black?logo=medium&style=flat" alt="Medium"/> </a>
+  <a href="mailto:giovannyorjuel2@gmail.com"> <img src="https://img.shields.io/badge/Email-Contact%20Me-red?logo=gmail&style=flat" alt="Email"/> </a>
+</div>  
+
+
 Publicación en Medium Tech & DevSecOps
 https://medium.com/@giovannyorjuel2/stop-secret-leaks-before-they-happen-mastering-gitleaks-for-devsecops-pipelines-633d0f975162
 
